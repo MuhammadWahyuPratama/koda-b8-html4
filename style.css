@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    background:rgb(201, 188, 218);
+    font-family:Arial, Helvetica, sans-serif;
+    padding:40px 0;
+}
+
+.container{
+    width:700px;
+    margin:auto;
+}
+
+.header{
+    background:white;
+    border-top:12px solid #673ab7;
+    padding:30px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.header h1{
+    margin-bottom:10px;
+}
+.header p{
+    margin-bottom: 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+input[type=text]{
+    width:25%;
+    padding:12px;
+    border:none;
+    border-bottom:2px solid #ccc;
+    font-size:16px;
+    color:grey;
+}
+
+input[type=number]{
+    width:25%;
+    padding:12px;
+    border:none;
+    border-bottom:2px solid #ccc;
+    font-size:16px;
+    color:grey;
+}
+
+.radio-group,
+.checkbox-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+
+.red{
+    color: red;
+}
+.button-group{
+    display:flex;
+    gap:10px;
+    padding-left:20px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+.submit button{
+    color: white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+    background-color: #673ab7;
+}
+.reset button{
+    font-size: 15px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    background:rgb(201, 188, 218);
+}
+
+.option{
+    margin-top:12px;
+}
+
+.option label{
+    margin-left:8px;
+}
+.footer p{
+    /* margin-top: 20px; */
+    margin: 20px auto;
+    width: 680px;
+    justify-content: start;
+    display: flex;
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 12px;
+    color: grey;
+}
