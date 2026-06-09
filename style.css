@@ -1,116 +1,170 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background:rgb(201, 188, 218);
-    font-family:Arial, Helvetica, sans-serif;
-    padding:40px 0;
+body {
+  background: rgb(201, 188, 218);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 0;
+  margin: 0;
 }
 
-.container{
-    width:700px;
-    margin:auto;
+.container {
+  width: 700px;
+  margin: auto;
 }
 
-.header{
-    background:white;
-    border-top:12px solid #673ab7;
-    padding:30px;
-    border-radius:10px;
-    margin-bottom:20px;
+.header {
+  background: white;
+  border-top: 12px solid #673ab7;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.header h1{
-    margin-bottom:10px;
+.header h1 {
+  margin-bottom: 10px;
 }
-.header p{
-    margin-bottom: 20px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    margin-bottom:15px;
+.header p {
+  margin-bottom: 20px;
 }
 
-.card p{
-    margin-bottom:15px;
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-input[type=text]{
-    width:25%;
-    padding:12px;
-    border:none;
-    border-bottom:2px solid #ccc;
-    font-size:16px;
-    color:grey;
+.card p {
+  margin-bottom: 15px;
 }
 
-input[type=number]{
-    width:25%;
-    padding:12px;
-    border:none;
-    border-bottom:2px solid #ccc;
-    font-size:16px;
-    color:grey;
+input[type="text"] {
+  width: 25%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  color: grey;
+}
+
+input[type="number"] {
+  width: 25%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  color: grey;
 }
 
 .radio-group,
-.checkbox-group{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
-.red{
-    color: red;
+.red {
+  color: red;
 }
-.button-group{
-    display:flex;
-    gap:10px;
-    padding-left:20px;
-    /* border: 1px solid red; */
-    justify-content: space-between;
-}
-
-.submit button{
-    color: white;
-    padding:12px 25px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:15px;
-    background-color: #673ab7;
-}
-.reset button{
-    font-size: 15px;
-    color: black;
-    border: none;
-    cursor: pointer;
-    background:rgb(201, 188, 218);
+.button-group {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+  /* border: 1px solid red; */
+  justify-content: space-between;
 }
 
-.option{
-    margin-top:12px;
+.submit button {
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #673ab7;
+}
+.reset button {
+  font-size: 15px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  background: rgb(201, 188, 218);
 }
 
-.option label{
-    margin-left:8px;
+.option {
+  margin-top: 12px;
 }
-.footer p{
-    /* margin-top: 20px; */
-    margin: 20px auto;
-    width: 680px;
-    justify-content: start;
+
+.option label {
+  margin-left: 8px;
+}
+.footer p {
+  /* margin-top: 20px; */
+  margin: 20px auto;
+  width: 680px;
+  justify-content: start;
+  display: flex;
+  text-align: center;
+  /* border: 1px solid red; */
+  font-size: 12px;
+  color: grey;
+}
+.footer1{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.hasil-page h1 {
+  text-align: center;
+  color: #673ab7;
+  margin-bottom: 30px;
+}
+
+.hasil-page table {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  border: none;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hasil-page th {
+  background-color: #673ab7;
+  color: white;
+  padding: 15px;
+}
+
+.hasil-page td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #673ab7;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  .footer p {
+    width: 95%;
+    justify-content: center;
     text-align: center;
-    /* border: 1px solid red; */
-    font-size: 12px;
-    color: grey;
+  }
+  table {
+    font-size: 14px;
+  }
+  td {
+    padding: 8px;
+  }
 }

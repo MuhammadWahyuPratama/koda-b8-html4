@@ -10,14 +10,17 @@
     <div class="container">
       <div class="header">
         <h1>Survey Perokok</h1>
-        <p>All of the submission to this form will be appended into a table as a signatures in the style an open latter.</p>
+        <p>
+          All of the submission to this form will be appended into a table as a
+          signatures in the style an open latter.
+        </p>
         <p class="red">*Required</p>
       </div>
 
       <form>
         <div class="card">
           <p>Siapa Nama Anda?<sup class="red">*</sup></p>
-          <input type="text" name="nama" placeholder="Your answer"  />
+          <input type="text" name="nama" placeholder="Your answer" />
         </div>
 
         <div class="card">
@@ -29,12 +32,17 @@
           <p>Apa Jenis Kelamin Anda?<sup class="red">*</sup></p>
 
           <div class="option">
-            <input type="radio" id="laki" name="gender" />
+            <input type="radio" id="laki" name="gender" value="laki-laki" />
             <label for="laki">Laki-Laki</label>
           </div>
 
           <div class="option">
-            <input type="radio" id="perempuan" name="gender" />
+            <input
+              type="radio"
+              id="perempuan"
+              name="gender"
+              value="perempuan"
+            />
             <label for="perempuan">Perempuan</label>
           </div>
         </div>
@@ -43,49 +51,73 @@
           <p>Apakah Anda Perokok?<sup class="red">*</sup></p>
 
           <div class="option">
-            <input type="radio" id="ya" name="rokok" />
+            <input type="radio" id="ya" name="rokok" value="Ya" />
             <label for="ya">Ya</label>
           </div>
 
           <div class="option">
-            <input type="radio" id="tidak" name="rokok" />
+            <input type="radio" id="tidak" name="rokok" value="Tidak" />
             <label for="tidak">Tidak</label>
           </div>
         </div>
 
         <div class="card">
-          <p>Jika Anda perokok, rokok apa yang pernah Anda coba? <sup class="red">*</sup></p>
+          <p>
+            Jika Anda perokok, rokok apa yang pernah Anda coba?
+            <sup class="red">*</sup>
+          </p>
 
           <div class="option">
-            <input type="checkbox" id="gudanggaram" />
+            <input
+              type="checkbox"
+              id="gudanggaram"
+              name="merkRokok"
+              value="gudangGaramFilter"
+            />
             <label for="gudanggaram">Gudang Garam Filter</label>
           </div>
 
           <div class="option">
-            <input type="checkbox" id="luckystrike" />
+            <input
+              type="checkbox"
+              id="luckystrike"
+              name="merkRokok"
+              value="luckyStrike"
+            />
             <label for="luckystrike">Lucky Strike</label>
           </div>
 
           <div class="option">
-            <input type="checkbox" id="marlboro" />
+            <input
+              type="checkbox"
+              id="marlboro"
+              name="merkRokok"
+              value="marlboro"
+            />
             <label for="marlboro">Marlboro</label>
           </div>
 
           <div class="option">
-            <input type="checkbox" id="esse" />
+            <input type="checkbox" id="esse" name="merkRokok" value="Esse" />
             <label for="esse">Esse</label>
           </div>
         </div>
 
         <div class="button-group">
-          <div class="submit"><button >Submit</button></div>
-          <div class="reset"><button>Reset</button></div>
+          <div class="submit"><button type="submit">Submit</button></div>
+          <div class="reset"><button type="reset">Reset</button></div>
         </div>
       </form>
     </div>
 
-    <div class="footer">
-        <p >Never submit password through Google Chrome.</p>
+    <div class="footer1">
+      <a href="hasil.html">Shows Survey Result </a>
     </div>
+
+    <div class="footer">
+      <p>Never submit password through Google Chrome.</p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
