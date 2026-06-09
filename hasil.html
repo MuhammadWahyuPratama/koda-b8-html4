@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <title>Hasil</title>
+
   </head>
-  <body>
-<div class="hasil-page">
-    <h1>
-        Hasil Survey
-    </h1>
+    <body class="bg-purple-200 min-h-screen">
+      <div class="max-w-5xl mx-auto py-10">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h1 class="text-4xl font-bold text-purple-700 mb-6">Hasil Survey</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Nama</th>
-          <th>Umur</th>
-          <th>Gender</th>
-          <th>Perokok</th>
-          <th>Merk</th>
-        </tr>
-      </thead>
+          <div class="overflow-x-auto">
+            <table class="w-full border border-gray-300">
+              <thead>
+                <tr class="bg-purple-600 text-white">
+                  <th class="px-4 py-3">Nama</th>
+                  <th class="px-4 py-3">Umur</th>
+                  <th class="px-4 py-3">Gender</th>
+                  <th class="px-4 py-3">Perokok</th>
+                  <th class="px-4 py-3">Merk Rokok</th>
+                </tr>
+              </thead>
 
-      <tbody id="data"></tbody>
-    </table>
+              <tbody id="data" class="text-center bg-white"></tbody>
+            </table>
+          </div>
 
-</div>
+          <div class="mt-6">
+            <a
+              href="index.html"
+              class="inline-block text-black px-5 py-2 rounded hover:bg-purple-100"
+            >
+              Back To Survey
+            </a>
+          </div>
+        </div>
+      </div>
 
-<div class="footer1">
-    <a href="index.html">back to the Survey</a>
-</div>
-    
-
-    <script src="hasil.js">
-
-    </script>
-  </body>
+      <script src="hasil.js"></script>
+    </body>
 </html>

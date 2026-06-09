@@ -1,27 +1,48 @@
 # Survey Perokok
 
-## Deskripsi
-Halaman survei depan yang dibuat menggunakan HTML dan CSS dengan tampilan yang terinspirasi dari Google Form.
+Aplikasi survey sederhana menggunakan HTML, Tailwind CSS, JavaScript, dan jQuery.
 
-contoh:
-![Survey Perokok](asset/goggleform.png)
+## Screenshot
 
-hasil :
-![Survey Perokok](asset/hasill.png)
+<table>
+    <tr>
+        <td>
+            <img src="asset/formkosong.png" alt="preview">
+        </td>
+        <td>
+            <img src="asset/formisi.png" alt="preview">
+        </td>
+        <td>
+            <img src="asset/hasilkosong.png" alt="preview">
+        </td>
+        <td>
+            <img src="asset/isiHasil.png" alt="preview">
+        </td>
+    </tr>
+    <tr>
+        <td>Form Kosong</td>
+        <td>Form Input</td>
+        <td>Data Kosong</td>
+        <td>Data Sample</td>
+    </tr>
+</table>
+
+
+
+## Tech Stack
+
+* HTML
+* Tailwind CSS
+* JavaScript
+* jQuery
+* Local Storage
 
 ## Fitur
 
-1 Input nama
-2 Input umur
-3 Pilihan jenis kelamin
-4 Pilihan status perokok
-5 Pilihan jenis rokok yang pernah dicoba
-6 Tombol Submit dan Reset
+* Input data survey
+* Penyimpanan data ke Local Storage
+* Menampilkan hasil survey
+* Styling menggunakan Tailwind CSS
+* Manipulasi DOM menggunakan jQuery
 
-## Menampilkan hasil
 
-ini gambar ketika user blm mengisi survey
-![Survey Perokok](asset/datahasilkosong.png)
-
-dan ini gambar ketika user sudah mengsubmit survey 
-![Survey Perokok](asset/isidata.png)

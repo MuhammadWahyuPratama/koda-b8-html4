@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Survey Rokok</title>
   </head>
   <body class="bg-purple-200">
     <div class="my-3 mx-auto max-w-2xl">
@@ -29,7 +30,7 @@
 
       <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
         <div class="border-b-2 border-black gap-5 flex flex-col">
-          <p class="font-bold gap-5 flex ">Berapa Umur Anda ?</p>
+          <p class="font-bold gap-5 flex">Berapa Umur Anda ?</p>
           <input type="number" name="umur" placeholder="Type your answer" />
         </div>
       </div>
@@ -53,74 +54,82 @@
           <label for="ya">Ya</label>
         </div>
         <div class="flex gap-3">
-          <input type="radio" id="ya" name="rokok" value="Ya" />
+          <input type="radio" id="ya" name="rokok" value="Tidak" />
           <label for="Tidak">Tidak</label>
         </div>
-
-        
       </div>
 
-      <div
-          class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5"
-        >
-          <p class="font-bold">Jika Anda Perokok , rokok apa yang pernah Anda coba ?</p>
+      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
+        <p class="font-bold">
+          Jika Anda Perokok , rokok apa yang pernah Anda coba ?
+        </p>
 
-          <div class="flex gap-3">
-            <input
-              type="checkbox"
-              id="gudanggaram"
-              name="merkRokok"
-              value="gudangGaramFilter"
-            />
-            <label for="gudanggaram">Gudang Garam Filter</label>
-          </div>
-
-          <div class="flex gap-3">
-            <input
-              type="checkbox"
-              id="luckystrike"
-              name="merkRokok"
-              value="luckyStrike"
-            />
-            <label for="luckystrike">Lucky Strike</label>
-          </div>
-
-          <div class="flex gap-3">
-            <input
-              type="checkbox"
-              id="marlboro"
-              name="merkRokok"
-              value="marlboro"
-            />
-            <label for="marlboro">Marlboro</label>
-          </div>
-
-          <div class="flex gap-3">
-            <input type="checkbox" id="esse" name="merkRokok" value="Esse" />
-            <label for="esse">Esse</label>
-          </div>
+        <div class="flex gap-3">
+          <input
+            type="checkbox"
+            id="gudanggaram"
+            name="merkRokok"
+            value="gudangGaramFilter"
+          />
+          <label for="gudanggaram">Gudang Garam Filter</label>
         </div>
+
+        <div class="flex gap-3">
+          <input
+            type="checkbox"
+            id="luckystrike"
+            name="merkRokok"
+            value="luckyStrike"
+          />
+          <label for="luckystrike">Lucky Strike</label>
+        </div>
+
+        <div class="flex gap-3">
+          <input
+            type="checkbox"
+            id="marlboro"
+            name="merkRokok"
+            value="marlboro"
+          />
+          <label for="marlboro">Marlboro</label>
+        </div>
+
+        <div class="flex gap-3">
+          <input type="checkbox" id="esse" name="merkRokok" value="Esse" />
+          <label for="esse">Esse</label>
+        </div>
+      </div>
+
+     
     </form>
-    <div class="my-3 mx-auto max-w-2xl flex justify-between">
-        <button class="px-4 py-2 text-purple-600 border-b-2 border-blue-600 hover:bg-purple-50" type="submit">
-            Submit
+    <form>
+      <div class="my-3 mx-auto max-w-2xl flex justify-between">
+        <button
+          class="px-4 py-2 text-purple-600 border-b-2 border-blue-600 hover:bg-purple-50"
+          type="submit"
+          id="submit"
+        >
+          Submit
         </button>
 
-        <button class="px-4 py-2 hover:bg-purple-50" type="reset">
-            Reset
+        <button class="px-4 py-2 hover:bg-purple-50" type="reset" id="reset">
+          Reset
         </button>
-    </div>
+      </div>
+      
+    </form>
+     
 
-    <div class="my-3 mx-auto max-w-2xl flex justify-center align-center hover:bg-purple-50">
-        <a href="hasil.html" class="font-bold">Shows Survey Result </a>
+    <div
+      class="my-3 mx-auto max-w-2xl flex justify-center align-center hover:bg-purple-50"
+    >
+      <a href="hasil.html" class="font-bold">Shows Survey Result </a>
     </div>
 
     <div class="text-xs my-3 mx-auto max-w-2xl mt-10 text-gray-500">
       <p>Never submit password through Google Chrome.</p>
     </div>
 
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
