@@ -3,132 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Survey Rokok</title>
+
+    <title>Survey Perokok</title>
   </head>
+
   <body class="bg-purple-200">
-    <div class="my-3 mx-auto max-w-2xl">
-      <div
-        class="border-t-4 border-purple-700 bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5"
-      >
-        <h1 class="text-4xl font-bold">Survey Perokok</h1>
-        <p>
-          All of the submission to this form will be appended into a table as a
-          signatures in the style an open latter.
-        </p>
-      </div>
-    </div>
-
-    <form class="my-3 mx-auto max-w-2xl flex flex-col gap-5">
-      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
-        <div class="border-b-2 border-black gap-5 flex flex-col">
-          <p class="font-bold">Siapa Nama Anda ?</p>
-          <input type="text" name="nama" placeholder="Type your answer" />
-        </div>
-      </div>
-
-      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
-        <div class="border-b-2 border-black gap-5 flex flex-col">
-          <p class="font-bold gap-5 flex">Berapa Umur Anda ?</p>
-          <input type="number" name="umur" placeholder="Type your answer" />
-        </div>
-      </div>
-
-      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
-        <p class="font-bold">Apa Jenis Kelamin Anda</p>
-        <div class="flex gap-3">
-          <input type="radio" id="laki" name="gender" value="laki-laki" />
-          <label for="laki">Laki-Laki</label>
-        </div>
-        <div class="flex gap-3">
-          <input type="radio" id="perempuan" name="gender" value="Perempuan" />
-          <label for="perempuan">Perempuan</label>
-        </div>
-      </div>
-
-      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
-        <p class="font-bold">Apakah Anda Perokok?</p>
-        <div class="flex gap-3">
-          <input type="radio" id="ya" name="rokok" value="Ya" />
-          <label for="ya">Ya</label>
-        </div>
-        <div class="flex gap-3">
-          <input type="radio" id="ya" name="rokok" value="Tidak" />
-          <label for="Tidak">Tidak</label>
-        </div>
-      </div>
-
-      <div class="bg-white p-10 rounded-t-lg rounded-b-md flex flex-col gap-5">
-        <p class="font-bold">
-          Jika Anda Perokok , rokok apa yang pernah Anda coba ?
-        </p>
-
-        <div class="flex gap-3">
-          <input
-            type="checkbox"
-            id="gudanggaram"
-            name="merkRokok"
-            value="gudangGaramFilter"
-          />
-          <label for="gudanggaram">Gudang Garam Filter</label>
-        </div>
-
-        <div class="flex gap-3">
-          <input
-            type="checkbox"
-            id="luckystrike"
-            name="merkRokok"
-            value="luckyStrike"
-          />
-          <label for="luckystrike">Lucky Strike</label>
-        </div>
-
-        <div class="flex gap-3">
-          <input
-            type="checkbox"
-            id="marlboro"
-            name="merkRokok"
-            value="marlboro"
-          />
-          <label for="marlboro">Marlboro</label>
-        </div>
-
-        <div class="flex gap-3">
-          <input type="checkbox" id="esse" name="merkRokok" value="Esse" />
-          <label for="esse">Esse</label>
-        </div>
-      </div>
-
-     
-    </form>
-    <form>
-      <div class="my-3 mx-auto max-w-2xl flex justify-between">
-        <button
-          class="px-4 py-2 text-purple-600 border-b-2 border-blue-600 hover:bg-purple-50"
-          type="submit"
-          id="submit"
-        >
-          Submit
-        </button>
-
-        <button class="px-4 py-2 hover:bg-purple-50" type="reset" id="reset">
-          Reset
-        </button>
-      </div>
+    <main class="my-3 mx-auto w-[95%] max-w-2xl">
       
-    </form>
-     
+      <header
+        class="border-t-4 border-purple-700 bg-white p-6 md:p-10 rounded-lg flex flex-col gap-5"
+      >
+        <h1 class="text-2xl md:text-4xl font-bold">Survey Perokok</h1>
 
-    <div
-      class="my-3 mx-auto max-w-2xl flex justify-center align-center hover:bg-purple-50"
-    >
-      <a href="hasil.html" class="font-bold">Shows Survey Result </a>
-    </div>
+        <p>
+          All of the submissions to this form will be stored and displayed on
+          the survey result page.
+        </p>
+      </header>
 
-    <div class="text-xs my-3 mx-auto max-w-2xl mt-10 text-gray-500">
-      <p>Never submit password through Google Chrome.</p>
-    </div>
+      
+      <form class="my-3 flex flex-col gap-5">
+       
+
+        <section class="bg-white p-6 md:p-10 rounded-lg flex flex-col gap-5">
+          <label for="nama" class="font-bold"> Siapa Nama Anda? </label>
+
+          <input
+            id="nama"
+            type="text"
+            name="nama"
+            placeholder="Type your answer"
+            class="border-b-2 border-black outline-none pb-2"
+            required
+          />
+        </section>
+
+       
+
+        <section class="bg-white p-10 rounded-lg flex flex-col gap-5">
+          <label for="umur" class="font-bold"> Berapa Umur Anda? </label>
+
+          <input
+            id="umur"
+            type="number"
+            name="umur"
+            placeholder="Type your answer"
+            class="border-b-2 border-black outline-none pb-2"
+            min="1"
+            required
+          />
+        </section>
+
+        
+
+        <section class="bg-white p-10 rounded-lg flex flex-col gap-5">
+          <h2 class="font-bold">Apa Jenis Kelamin Anda?</h2>
+
+          <div class="flex gap-3">
+            <input
+              type="radio"
+              id="laki"
+              name="gender"
+              value="Laki-Laki"
+              required
+            />
+
+            <label for="laki"> Laki-Laki </label>
+          </div>
+
+          <div class="flex gap-3">
+            <input
+              type="radio"
+              id="perempuan"
+              name="gender"
+              value="Perempuan"
+            />
+
+            <label for="perempuan"> Perempuan </label>
+          </div>
+        </section>
+
+        
+
+        <section class="bg-white p-10 rounded-lg flex flex-col gap-5">
+          <h2 class="font-bold">Apakah Anda Perokok?</h2>
+
+          <div class="flex gap-3">
+            <input type="radio" id="ya" name="rokok" value="Ya" required />
+
+            <label for="ya"> Ya </label>
+          </div>
+
+          <div class="flex gap-3">
+            <input type="radio" id="tidak" name="rokok" value="Tidak" />
+
+            <label for="tidak"> Tidak </label>
+          </div>
+        </section>
+
+       
+
+        <section class="bg-white p-10 rounded-lg flex flex-col gap-5">
+          <h2 class="font-bold">
+            Jika Anda Perokok, rokok apa yang pernah Anda coba?
+          </h2>
+
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              id="gudanggaram"
+              name="merkRokok"
+              value="Gudang Garam Filter"
+            />
+
+            <label for="gudanggaram"> Gudang Garam Filter </label>
+          </div>
+
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              id="luckystrike"
+              name="merkRokok"
+              value="Lucky Strike"
+            />
+
+            <label for="luckystrike"> Lucky Strike </label>
+          </div>
+
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              id="marlboro"
+              name="merkRokok"
+              value="Marlboro"
+            />
+
+            <label for="marlboro"> Marlboro </label>
+          </div>
+
+          <div class="flex gap-3">
+            <input type="checkbox" id="esse" name="merkRokok" value="Esse" />
+
+            <label for="esse"> Esse </label>
+          </div>
+        </section>
+
+      
+
+        <section class="flex justify-between">
+          <button
+            id="submit"
+            type="submit"
+            class="px-4 py-2 text-purple-600 border-b-2 border-blue-600 hover:bg-purple-50"
+          >
+            Submit
+          </button>
+
+          <button id="reset" type="reset" class="px-4 py-2 hover:bg-purple-50" >
+            Reset
+          </button>
+        </section>
+      </form>
+
+    
+
+      <section class="flex justify-center mt-5">
+        <a href="hasil.html" class="font-bold hover:text-purple-700">
+          Show Survey Result
+        </a>
+      </section>
+
+    
+
+      <footer class="text-xs text-gray-500 mt-8 md:mt-10 text-center">
+        <p>Never submit passwords through Google Forms.</p>
+      </footer>
+    </main>
 
     <script src="script.js"></script>
   </body>
